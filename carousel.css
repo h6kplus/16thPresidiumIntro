@@ -1,7 +1,8 @@
 /* GLOBAL STYLES
 -------------------------------------------------- */
-/* Padding below the footer and lighter body text */
 
+
+/* Padding below the footer and lighter body text */
 
 .b-t-t {
     color: #0f0f0f;
@@ -15,7 +16,9 @@ body {
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
 
+
 /* Special class on .container surrounding .navbar, used for positioning it into place. */
+
 .navbar-wrapper {
     position: absolute;
     top: 0;
@@ -24,8 +27,10 @@ body {
     z-index: 20;
 }
 
+
 /* Flip around the padding for proper display in narrow viewports */
-.navbar-wrapper > .container {
+
+.navbar-wrapper>.container {
     padding-right: 0;
     padding-left: 0;
 }
@@ -52,11 +57,9 @@ body {
     color: rgba(255, 255, 255, 1);
 }
 
-
-.navbar-inverse .navbar-nav > li > a {
+.navbar-inverse .navbar-nav>li>a {
     color: rgba(220, 220, 220, 1);
 }
-
 
 .navbar-header img {
     max-height: 37px;
@@ -68,6 +71,10 @@ body {
     margin-top: 20px;
     margin-bottom: 20px;
     margin-right: 15px;
+}
+
+img.zero-slide {
+    background-color: #3B7FD9;
 }
 
 img.first-slide {
@@ -85,7 +92,6 @@ img.second-slide {
 p.second-slide {
     color: rgba(0, 60, 110, 1);
 }
-
 
 .first-btn {
     background-color: rgba(255, 200, 18, 1);
@@ -117,7 +123,6 @@ p.second-slide {
     border-color: rgba(0, 38, 76, 1);
 }
 
-
 .team {
     display: inline-block;
     width: 50%;
@@ -135,9 +140,9 @@ p.second-slide {
     /*background-color: rgba(0, 60, 110, .5);*/
 }
 
-.navbar-inverse .navbar-nav > .open > a,
-.navbar-inverse .navbar-nav > .open > a:focus,
-.navbar-inverse .navbar-nav > .open > a:hover {
+.navbar-inverse .navbar-nav>.open>a,
+.navbar-inverse .navbar-nav>.open>a:focus,
+.navbar-inverse .navbar-nav>.open>a:hover {
     background-color: rgba(255, 203, 9, 1);
     color: rgba(0, 48, 104, 1);
 }
@@ -146,42 +151,46 @@ p.second-slide {
     font-size: 18px;
 }
 
+
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 
+
 /* Carousel base class */
+
 .carousel {
     height: 475px;
     margin-bottom: 60px;
-
 }
 
+
 /* Since positioning the image, we need to help out the caption */
+
 .carousel-caption {
     z-index: 10;
 }
 
-.carousel-caption > h1 {
+.carousel-caption>h1 {
     font-size: 130px;
     font-family: PilGi, FZSong, "Lucinda Grande", "Lucinda Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
 }
 
-.carousel-caption > p {
+.carousel-caption>p {
     font-family: Verdana, "Rockwell", "Lucinda Grande", "Lucinda Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
     font-size: 25px;
     margin-bottom: 20px;
     margin-top: 20px;
-
 }
 
 
 /* Declare heights because of positioning of img element */
+
 .carousel .item {
     height: 475px;
     background-color: #777;
 }
 
-.carousel-inner > .item > img {
+.carousel-inner>.item>img {
     position: absolute;
     top: 0;
     left: 0;
@@ -193,7 +202,6 @@ p.second-slide {
     max-height: 170px;
     max-width: 320px;
 }
-
 
 .btn {
     font-size: 18px;
@@ -209,7 +217,9 @@ p.second-slide {
 /* MARKETING CONTENT
 -------------------------------------------------- */
 
+
 /* Center align the text within the three columns below the carousel */
+
 .marketing .col-lg-4 {
     font-family: FZSong;
     margin-bottom: 20px;
@@ -241,10 +251,10 @@ p.second-slide {
     max-height: 150px;
 }
 
-
 .btn-rounded {
     border-radius: 5px;
 }
+
 
 /* Featurettes
 ------------------------- */
@@ -256,10 +266,13 @@ p.second-slide {
 }
 
 .featurette-divider {
-    margin: 40px 0; /* Space out the Bootstrap <hr> more */
+    margin: 40px 0;
+    /* Space out the Bootstrap <hr> more */
 }
 
+
 /* Thin out the marketing headings */
+
 .featurette-heading {
     font-weight: 300;
     line-height: 1;
@@ -311,6 +324,7 @@ footer {
     margin-right: 30px;
 }
 
+
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
@@ -319,104 +333,80 @@ footer {
     .navbar-wrapper {
         margin-top: 20px;
     }
-
     .navbar-wrapper .container {
         padding-right: 15px;
         padding-left: 15px;
     }
-
     .navbar-wrapper .navbar {
         padding-right: 0;
         padding-left: 0;
     }
-
     /* The navbar becomes detached from the top, so we round the corners */
     .navbar-wrapper .navbar {
         border-radius: 15px;
         background-color: rgba(33, 33, 33, .3);
         border-width: 0;
     }
-
-
     /* Bump up size of carousel content */
-    .carousel-caption p {
-
-    }
-
+    .carousel-caption p {}
     .featurette-heading {
         font-size: 40px;
     }
-
     .carousel-logo {
         max-height: 170px;
         max-width: 800px;
     }
-
     .logo-small {
         text-align: center;
         max-height: 140px;
     }
-
     .logo-medium {
         text-align: center;
         max-height: 200px;
     }
-
     .marketing .col-lg-12 {
         margin-bottom: 35px;
         height: 150px;
         text-align: center;
     }
-
     .lead {
         font-size: 21px;
     }
-
     .featurette-image-logo {
         max-height: 175px;
-
     }
-
     .featurette-image-logo-2 {
         max-height: 175px;
     }
-
 }
-
 
 @media (min-width: 992px) {
     .featurette-heading-logo {
         margin-top: 40px;
     }
-
     .featurette-image {
         margin-bottom: 5px;
         margin-top: 5px;
     }
-
     .featurette-image-logo {
         max-height: 275px;
     }
-
     .featurette-image-logo-2 {
         max-height: 200px;
     }
-
 }
 
 @media (min-width: 1400px) {
     .container {
         width: 1350px;
     }
-
     .intro {
         font-size: 28px;
     }
-
     .featurette-divider {
-        margin: 80px 0; /* Space out the Bootstrap <hr> more */
+        margin: 80px 0;
+        /* Space out the Bootstrap <hr> more */
     }
-
 }
 
 @font-face {
